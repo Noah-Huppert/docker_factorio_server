@@ -1,11 +1,12 @@
 .PHONY: all build push
 
-TAG ?= noahhuppert/factorio:0.17.14
+TAG ?= noahhuppert/factorio:0.17.79
+CONTAINER_CLI ?= sudo podman
 
 all: build push
 
 build:
-	docker build -t "${TAG}" .
+	${CONTAINER_CLI} build -t "${TAG}" .
 
 push:
-	docker push "${TAG}"
+	${CONTAINER_CLI} push "${TAG}"

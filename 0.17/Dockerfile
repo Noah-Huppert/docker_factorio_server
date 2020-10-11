@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-glibc:alpine-3.9
 
-MAINTAINER https://github.com/dtandersen/docker_factorio_server
+MAINTAINER https://github.com/Noah-Huppert/docker_factorio_server
 
 ARG USER=factorio
 ARG GROUP=factorio
@@ -9,8 +9,8 @@ ARG PGID=845
 
 ENV PORT=34197 \
     RCON_PORT=27015 \
-    VERSION=0.17.14 \
-    SHA1=be9cbb077939d48649c71f8fc59a34c03707bd27 \
+    VERSION=0.17.79 \
+    SHA1=7f127baf3cf01c6e545a9ca376dec1ac37468f8a \
     SAVES=/factorio/saves \
     CONFIG=/factorio/config \
     MODS=/factorio/mods \
